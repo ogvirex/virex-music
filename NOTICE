@@ -1,0 +1,6 @@
+Virex Music
+Copyright (c) 2026 Virex Music contributors.
+
+The project uses dependencies distributed under their respective licenses, including AndroidX/Compose/Media3/WorkManager (Apache-2.0), Kotlin and kotlinx.coroutines (Apache-2.0), Coil (Apache-2.0), and OkHttp (Apache-2.0). The Gradle wrapper carries its original Apache-2.0 copyright and license notices.
+
+Music, lyrics, artist names, album art and other third-party catalog materials are not licensed by this project's source-code license. Obtain appropriate rights and comply with the applicable service terms for content use. The Virex name and branding identify this project; the MIT License does not itself grant trademark rights.
