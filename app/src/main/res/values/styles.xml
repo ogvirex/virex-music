@@ -1,0 +1,1 @@
+<resources><style name="Theme.Virex" parent="android:style/Theme.Material.NoActionBar"><item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">false</item><item name="android:windowActionModeOverlay">true</item><item name="android:windowBackground">#090B0A</item><item name="android:colorAccent">#C6F36A</item></style></resources>
