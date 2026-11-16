@@ -1,5 +1,13 @@
 name: Android build
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    paths-ignore: ['docs/**', '**/*.md', 'LICENSE', 'NOTICE']
+  pull_request:
+    paths-ignore: ['docs/**', '**/*.md', 'LICENSE', 'NOTICE']
+  workflow_dispatch:
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -12,10 +20,12 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-35 build-tools;35.0.0' 
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - run: gradle testDebugUnitTest lintDebug assembleDebug
+      - run: gradle --no-daemon --max-workers=2 -Dorg.gradle.jvmargs=-Xmx2g -Pkotlin.compiler.execution.strategy=in-process testDebugUnitTest lintDebug assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: Virex-Music-debug
