@@ -3,7 +3,7 @@
   <h1>Virex Music</h1>
   <p><strong>Your music. Online and offline.</strong></p>
   <p>A native Android music app built with Kotlin, Jetpack Compose and Media3.</p>
-  <p><a href="https://github.com/ogvirex/virex-music/releases/latest">Download APK</a> · <a href="https://ogvirex.github.io/virex-music/">Website</a> · <a href="https://github.com/ogvirex/virex-music/issues">Report an issue</a></p>
+  <p><a href="https://github.com/ogvirex/virex-music/releases/latest">Download APK</a> · <a href="https://ogvirex.github.io/virex-music/">Website</a> · <a href="https://github.com/ogvirex/virex-music/issues">Report an issue</a> · <a href="https://t.me/Virex_Devs">Telegram updates</a></p>
   <p>Android 8.0+ · Version 1.3.3 · MIT licensed</p>
 </div>
 
@@ -40,6 +40,10 @@ No sign-in or in-app advertising SDK is required. Playlists, listening records a
 Download **Virex-Music.apk** from [Releases](https://github.com/ogvirex/virex-music/releases/latest), open it on your Android device, and follow the installation prompts.
 
 **Requires Android 8.0 or newer.**
+
+## Stay updated
+
+Join [Virex Devs on Telegram](https://t.me/Virex_Devs) for app releases, project news, and announcements.
 
 ## Contribute
 
